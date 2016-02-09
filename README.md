@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/juttle/juttle-jsdp.svg?branch=master)](https://travis-ci.org/juttle/juttle-jsdp)
 
-The implementation of the Juttle Streaming Data Protocol (JSDP) used by the components of Project Juttle to send data and metadata between the server ([outrigger](https://github.com/juttle/outrigger)) and client ([juttle-client-library](https://github.com/juttle/juttle-client-library)) components.
+The implementation of the Juttle Streaming Data Protocol (JSDP) used by the components of Project Juttle to send data and metadata between the server ([juttle-service](https://github.com/juttle/juttle-service)) and client ([juttle-client-library](https://github.com/juttle/juttle-client-library)) components.
 
 ## Getting started
 
