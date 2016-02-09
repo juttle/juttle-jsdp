@@ -1,6 +1,6 @@
 {
   "name": "juttle-jsdp",
-  "version": "0.2.0-rc.0",
+  "version": "0.2.0",
   "description": "Juttle Streaming Data Protocol",
   "main": "lib/index.js",
   "keywords": [
