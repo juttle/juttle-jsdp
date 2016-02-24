@@ -19,12 +19,16 @@ describe('protocol', () => {
             aNaN: NaN,
             anInfinity: Infinity,
             aDate: new Date(2000),
+            error: new Error('hello'),
             aDuration: moment.duration(1, 'hour')
         };
 
         let serializedObject = JSDP.serialize(obj, { toObject: true });
-
         expect(serializedObject).to.be.a('object');
-        expect(JSDP.deserialize(serializedObject)).to.deep.equal(obj);
+
+        let deserializedObject = JSDP.deserialize(serializedObject);
+
+        expect(deserializedObject).to.deep.equal(obj);
+        expect(deserializedObject.error.message).equal('hello');
     });
 });
