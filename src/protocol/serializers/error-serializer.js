@@ -4,10 +4,33 @@ const errorSerializer = {
         return value instanceof Error;
     },
     serialize(value) {
-        return value.message;
+        var result = {
+            message: value.message
+        };
+
+        if (value.info) {
+            result.info = value.info;
+        }
+
+        if (value.code) {
+            result.code = value.code;
+        }
+
+        return JSON.stringify(result);
     },
     deserialize(value) {
-        return new Error(value);
+        var parsed = JSON.parse(value);
+        var err = new Error(parsed.message);
+
+        if (parsed.info) {
+            err.info = parsed.info;
+        }
+
+        if (parsed.code) {
+            err.code = parsed.code;
+        }
+
+        return err;
     }
 };
 
