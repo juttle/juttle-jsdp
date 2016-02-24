@@ -1,6 +1,11 @@
 # Change Log
 This file documents all notable changes to juttle-jsdp. The release numbering uses [semantic versioning](http://semver.org).
 
+## 0.2.1
+Released 2016-02-24
+
+### Bug Fixes
+- serializers: add Error [#8](https://github.com/juttle/juttle-jsdp/pull/8)]
 
 ## 0.2.0
 Released 2016-02-09
