@@ -41,7 +41,7 @@
     "webpack": "^1.12.12"
   },
   "dependencies": {
-    "pluggable-json": "^0.1.2",
+    "pluggable-json": "^0.2.0",
     "underscore": "^1.8.3"
   },
   "peerDependencies": {
