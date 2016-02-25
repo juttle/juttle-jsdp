@@ -1,6 +1,13 @@
 # Change Log
 This file documents all notable changes to juttle-jsdp. The release numbering uses [semantic versioning](http://semver.org).
 
+## 0.3.0
+Released 2016-02-25
+
+### Major Changes
+NOTICE: As part of this release, we bumped the pluggable-json version to 0.2.0 which uses a new serialization format.
+- add support for serializing Error objects [[#8](https://github.com/juttle/juttle-jsdp/pull/8)] and [[#9](https://github.com/juttle/juttle-jsdp/pull/9)]
+- bump pluggable-json version to 0.2.0 [[#10](https://github.com/juttle/juttle-jsdp/pull/10)]
 
 ## 0.2.0
 Released 2016-02-09
